@@ -1,0 +1,21 @@
+{
+  "name": "routerexpress",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Julian <julian.cherel@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

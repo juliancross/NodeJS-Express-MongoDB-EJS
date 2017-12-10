@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <% for (var i = 0; i < result.length; i++) { %>
+                <li>
+                    <%= result[i].state %>
+                </li>
+                <li>
+                    <%= result[i].city %>
+                </li>
+
+                <% } %>
+        </ul>
+    </div>
+
+    <section class="add">
+        <div class="container">
+            <div>
+                <p>
+                    <%= new Date() %>
+                </p>
+                <ul>
+                    <% for (var i = 0; i < items.length; i++) { %>
+                        <li>
+                            <%= items[i].desc %>
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+            <form action="/add" method='post'>
+                <input type="text" name="newItem">
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

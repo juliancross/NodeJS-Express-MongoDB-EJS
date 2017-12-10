@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="record">
+        <div class="container">
+            <h1>Recorded of an DataBase</h1>
+            <div class="db">
+                <% for (var i = 0; i < result.length; i++) { %>
+                    <ul>
+
+                        <li>
+                            Nom :
+                            <%= result[i].name %>
+                        </li>
+                        <li>
+                            Prénom :
+                            <%= result[i].surName%>
+                        </li>
+                        <li>
+                            Email :
+                            <%= result[i].mail %>
+                        </li>
+                        <li>
+                            Mot de passe :
+                            <%= result[i].password %>
+                        </li>
+                    </ul>
+                    <% } %>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

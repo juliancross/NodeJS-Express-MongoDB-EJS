@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Query Parameters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <h1>Query Parameters</h1>
+    <p>
+        <%= qs.name %>
+    </p>
+
+    <p>
+        <%= qs.surname %>
+    </p>
+
+    <p>
+        <%= qs.mail %>
+    </p>
+    <form action="/params" method="get" class='uri'>
+        <div>
+            <label for="n">Quel est le nom de la personne que vous souhaitez joindre ?</label>
+            <input type="text" name="n" value="<%= qs.name %>">
+        </div>
+        <div>
+            <label for="surname">Quel est le prénom de la personne que vous souhaitez joindre ?</label>
+            <input type="text" name="surname">
+        </div>
+        <div>
+            <label for="mail">Quel est son adresse mail ?</label>
+            <input type="text" name="mail">
+        </div>
+        <input type="submit" class='submit'>
+    </form>
+    <p>Open your console and have a look in the network module</p>
+    <a href="/">Home</a>
+    <script src="script.js"></script>
+</body>
+
+</html>
